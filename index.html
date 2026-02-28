@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iftekhar Mahmud | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        /* This CSS ensures the "Home" link looks active */
+        .navlinks li a.active {
+            color: #ff4a57; /* Change this to your theme color */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-i"></i>
+                    <div class="logo-text">Iftekhar Mahmud</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">B.Sc in CSE</span></h5>
+                    <h1>Iftekhar Mahmud</h1>
+                    <p>Iftekhar Mahmud is a Bangladeshi author, CSE student, and musical artist known for his dedication and multi-disciplinary approach to growth.</p>
+
+                    <div class="btn-group">
+                       <a href="resume.pdf" class="btn active" download>Download CV</a>
+                       <a href="contact.html" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/iftekhaar.murad" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/iftekharmahmud" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/iftekhaar_" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/iftekhar_mahmud" target="_blank" rel="noopener"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input",{
+            strings:["B.Sc in Computer Science & Engineering","Author", "Musical Artist"],
+            typeSpeed: 90,
+            backSpeed: 70,
+            loop: true
+        });
+     </script>
+</body>
+</html>

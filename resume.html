@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Iftekhar Mahmud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-i"></i>
+                    <div class="logo-text">Iftekhar Mahmud</div>
+                </div>
+                <nav>
+                    <div class="togglebtn"><span></span><span></span><span></span></div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html" class="active">Resume</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="container">
+                <div class="hero-text">
+                    <h1>My Resume</h1>
+
+                    <div class="resume-item">
+                        
+                   
+
+                    <div class="resume-item">
+                        <h3>Education</h3>
+                        <p>
+                            <strong>B.Sc in Computer Science & Engineering (CSE)</strong><br>
+                            World University of Bangladesh<br>
+                            Currently in 4th Semester<br>
+                            Focusing on Programming, Algorithms, Data Structures, and Digital Innovation.
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h3>Technical Skills</h3>
+                        <p>
+                            ✔ C Programming<br>
+                            ✔ C++<br>
+                            ✔ Python<br>
+                            ✔ HTML & CSS<br>
+                            ✔ Basic Web Development<br>
+                            ✔ Git & GitHub (Learning Stage)
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h3>Additional Skills</h3>
+                        <p>
+                            ✔ Problem Solving<br>
+                            ✔ Creative Writing<br>
+                            ✔ Digital Content Creation<br>
+                            ✔ Communication Skills
+                        </p>
+                    </div>
+
+                    <br>
+                    <a href="resume.pdf" class="btn active" download>Download Full PDF</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <script>
+        document.querySelector(".togglebtn").addEventListener("click", function(){
+            this.classList.toggle("click");
+            document.querySelector(".navlinks").classList.toggle("open");
+        });
+     </script>
+</body>
+</html>
